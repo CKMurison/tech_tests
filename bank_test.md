@@ -20,6 +20,7 @@ date || credit || debit || balance
 10/01/2023 || 1000.00 || || 1000.00
 
 
+
 1. Maintain a list or array to store the transaction history, including the date, credit amount, debit amount, and balance after each transaction.
 
 transaction = [];
@@ -36,6 +37,9 @@ const withdraw = this.balance += amount
 transaction.push(withdraw, this.date, this.balance)
 
 4. Implement the printStatement method to generate the statement using the transaction history. The statement should display the date, credit (if any), debit (if any), and balance for each transaction in a tabular format.
+
+this.transaction.map
+
 
 5. Consider formatting the amounts to a fixed number of decimal places and formatting the date in the desired format.
 
