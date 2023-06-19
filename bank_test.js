@@ -1,7 +1,8 @@
 class Account {
-constructor(balance, amount){
+constructor(balance, amount, date){
     this.balance = 0;
     this.amount = amount;
+    this.date = new Date();
   }
 
   deposit(amount) {
@@ -9,7 +10,7 @@ constructor(balance, amount){
   };
 
   withdraw(amount) {
-    this.balance -= amount
+      this.balance -= amount;
   }
 
   printStatement() {
