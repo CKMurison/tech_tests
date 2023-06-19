@@ -5,11 +5,11 @@ constructor(balance, amount){
   }
 
   deposit(amount) {
-    this.balance + amount
+    this.balance += amount
   };
 
   withdraw(amount) {
-    this.balance
+    this.balance -= amount
   }
 
   printStatement() {
