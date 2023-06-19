@@ -18,3 +18,25 @@ date || credit || debit || balance
 14/01/2023 || || 500.00 || 2500.00
 13/01/2023 || 2000.00 || || 3000.00
 10/01/2023 || 1000.00 || || 1000.00
+
+
+1. Maintain a list or array to store the transaction history, including the date, credit amount, debit amount, and balance after each transaction.
+
+transaction = [];
+
+2. Modify the deposit method to add a transaction record to the history, including the date, the deposited amount as credit, and the updated balance.
+
+const deposit = this.balance += amount 
+transaction.push(deposit, this.date, this.balance)
+
+
+3. Modify the withdraw method to add a transaction record to the history, including the date, the withdrawn amount as debit, and the updated balance.
+
+const withdraw = this.balance += amount 
+transaction.push(withdraw, this.date, this.balance)
+
+4. Implement the printStatement method to generate the statement using the transaction history. The statement should display the date, credit (if any), debit (if any), and balance for each transaction in a tabular format.
+
+5. Consider formatting the amounts to a fixed number of decimal places and formatting the date in the desired format.
+
+6. By following these steps, you should be able to create an updated version of the Account class that can display the statement in the format you mentioned.
