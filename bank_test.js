@@ -1,18 +1,11 @@
-class Transaction {
-  constructor(date, amount){
-    this.date = date;
-    this.amount = amount;
-  }
-};
-
 class Account {
 constructor(balance, amount){
-    this.balance = [];
+    this.balance = 0;
     this.amount = amount;
   }
 
   deposit(amount) {
-    this.balance.push(amount)
+    this.balance + amount
   };
 
   withdraw(amount) {
