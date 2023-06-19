@@ -1,25 +1,24 @@
 class Account {
-constructor(balance, amount, date, transaction){
+constructor(){
     this.balance = 0;
-    this.amount = amount;
-    this.date = new Date();
     this.transaction = [];
   }
 
-  deposit(amount) {
-    const formattedDate = this.date.toLocaleDateString('en-GB');
-    const deposit = this.balance += amount;
-    this.transaction.push(deposit, formattedDate, this.balance)
+  deposit(amount, date) {
+    const updatedBalance = this.balance += amount;
+    this.transaction.push([date, amount, updatedBalance])
     console.log(this.transaction)
   };
 
-  withdraw(amount) {
-    this.balance -= amount;
-  }
+  withdraw(amount, date) {
+    const updatedBalance = this.balance -= amount;
+    this.transaction.push([date, amount, updatedBalance])
+    console.log(this.transaction)
+  };
 
   printStatement() {
     return this.transaction
-  }
+  };
 };
 
 module.exports = Account;
