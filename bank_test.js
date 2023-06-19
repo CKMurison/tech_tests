@@ -6,16 +6,19 @@ class Transaction {
 };
 
 class Account {
-constructor(balance){
+constructor(balance, amount){
     this.balance = [];
+    this.amount = amount;
   }
 
-  deposit() {
-    const deposit = () => {
-
-    
-    };
+  deposit(amount) {
+    this.balance.push(amount)
   };
+
+  withdraw(amount) {
+    this.balance
+  }
+
   printStatement() {
     return this.balance
   }
