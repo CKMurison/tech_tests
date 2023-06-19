@@ -3,7 +3,8 @@ const Account = require('./bank_test')
 describe('Account', () => {
   it('should display an empty balance', () => {
     const response = new Account
-    expect(response.printStatement()).toEqual(0)
+    response.date = "Date";
+    expect(response.printStatement()).toEqual([0, "Date", 0])
   });
   it('should deposit an amount into the array', () => {
     const response = new Account

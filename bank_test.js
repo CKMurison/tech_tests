@@ -7,8 +7,9 @@ constructor(balance, amount, date, transaction){
   }
 
   deposit(amount) {
+    const formattedDate = this.date.toLocaleDateString('en-GB');
     const deposit = this.balance += amount;
-    this.transaction.push(deposit, this.date, this.balance)
+    this.transaction.push(deposit, formattedDate, this.balance)
     console.log(this.transaction)
   };
 
@@ -17,7 +18,7 @@ constructor(balance, amount, date, transaction){
   }
 
   printStatement() {
-    return this.balance
+    return this.transaction
   }
 };
 
