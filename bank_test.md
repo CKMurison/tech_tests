@@ -42,5 +42,3 @@ this.transaction.map
 
 
 5. Consider formatting the amounts to a fixed number of decimal places and formatting the date in the desired format.
-
-6. By following these steps, you should be able to create an updated version of the Account class that can display the statement in the format you mentioned.
