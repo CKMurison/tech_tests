@@ -20,3 +20,5 @@ As the code expanded in complexity I had to alter my tests and my code to meet t
 ## My Structure 
 
 My code has a simple structure with three methods and two variables that are made on start with defualt values. These can then be maninpulated by the withdraw and deposit method and then transactions can be listed to display that history by using the printStatement method.
+
+![Alt text](image.png)
