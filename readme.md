@@ -4,11 +4,11 @@ The program is built with two default states, a balance and a transaction. The b
 
 ## How to set-up
 
-Firstly, run ** npm install -g jest **
+Firstly, run **npm install -g jest**
 
-Then run ** Jest ** in the terminal to see each of the tests.
+Then run **Jest** in the terminal to see each of the tests.
 
-To run the code in the terminal, type ** node bank_test.js **
+To run the code in the terminal, type **node bank_test.js**
 
 ## My Approach
 
