@@ -1,0 +1,17 @@
+{
+  "name": "tech_tests",
+  "version": "1.0.0",
+  "description": "The program is built with two default states, a balance and a transaction. The balance is manipulated by two methods, withdraw and deposit, that will either add or subtract from the balance. Each of these methods then takes the behaviour performed and stores in within the transactions to be accessed later with a date, amount deposited or withdrawn, and an updated balance based on that. The third method then loops over each of the transactions to display them to the user",
+  "main": "bank_test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^8.43.0",
+    "jest": "^29.5.0"
+  },
+  "devDependencies": {}
+}
