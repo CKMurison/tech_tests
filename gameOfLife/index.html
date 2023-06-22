@@ -7,7 +7,9 @@
     <script>
       var size = 50;
       var htmlElements;
-      var cells
+      var cells;
+      var EMPTY = 0;
+      var ALIVE = 1;
 
       function createField() {
         htmlElements = [];
@@ -37,6 +39,7 @@
 
       function init(){
         createField();
+        
         draw();
       }
     </script>
